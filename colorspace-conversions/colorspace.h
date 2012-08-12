@@ -42,55 +42,54 @@
 /*The lower limit for V in YUV*/
 #define YUV_V_LOWER_LIMIT (-0.615)
 
-
 typedef struct
 {
     double R;
     double G;
     double B;
-}RgbFColor;
+} RgbFColor;
 
 typedef struct
 {
     uint8_t R;
     uint8_t G;
     uint8_t B;
-}RgbIColor;
+} RgbIColor;
 
 typedef struct
 {
     double H;
     double S;
     double I;
-}HsiColor;
+} HsiColor;
 
 typedef struct
 {
     double H;
     double S;
     double L;
-}HslColor;
+} HslColor;
 
 typedef struct
 {
     double H;
     double S;
     double V;
-}HsvColor;
+} HsvColor;
 
 typedef struct
 {
     double Y;
     double I;
     double Q;
-}YiqColor;
+} YiqColor;
 
 typedef struct
 {
     double Y;
     double U;
     double V;
-}YuvColor;
+} YuvColor;
 
 /*
  * Description:
@@ -102,8 +101,7 @@ typedef struct
  * Returns:
  *  true if the value is within the interval
  *  false if the value is not within the interval
- */
-bool RealIsWithinBounds(double value, double lowerLimit, double upperLimit);
+ */bool RealIsWithinBounds(double value, double lowerLimit, double upperLimit);
 /*
  * Description:
  *  Checks if a value is within a specified interval
@@ -114,8 +112,8 @@ bool RealIsWithinBounds(double value, double lowerLimit, double upperLimit);
  * Returns:
  *  true if the value is within the interval
  *  false if the value is not within the interval
- */
-bool IntegerIsWithinBounds(uint8_t value, uint8_t lowerLimit, uint8_t upperLimit);
+ */bool IntegerIsWithinBounds(uint8_t value, uint8_t lowerLimit,
+        uint8_t upperLimit);
 /*
  * Description:
  *  Returns the smallest of the three parameters
@@ -144,8 +142,7 @@ double Double_GetMaximum(double r, double g, double b);
  * Returns:
  *  true if the values are correct
  *  false if the values are incorrect
- */
-bool RgbF_IsValid(double r, double g, double b);
+ */bool RgbF_IsValid(double r, double g, double b);
 /*
  * Description:
  *  Checks if the HSI components are valid
@@ -155,8 +152,7 @@ bool RgbF_IsValid(double r, double g, double b);
  * Returns:
  *  true if the values are correct
  *  false if the values are incorrect
- */
-bool Hsi_IsValid(double h, double s, double i);
+ */bool Hsi_IsValid(double h, double s, double i);
 /*
  * Description:
  *  Checks if the RGB components are valid
@@ -166,8 +162,7 @@ bool Hsi_IsValid(double h, double s, double i);
  * Returns:
  *  true if the values are correct
  *  false if the values are incorrect
- */
-bool RgbI_IsValid(uint8_t r, uint8_t g, uint8_t b);
+ */bool RgbI_IsValid(uint8_t r, uint8_t g, uint8_t b);
 /*
  * Description:
  *  Checks if the HSL components are valid
@@ -177,8 +172,7 @@ bool RgbI_IsValid(uint8_t r, uint8_t g, uint8_t b);
  * Returns:
  *  true if the values are correct
  *  false if the values are incorrect
- */
-bool Hsl_IsValid(double h, double s, double l);
+ */bool Hsl_IsValid(double h, double s, double l);
 /*
  * Description:
  *  Checks if the HSV components are valid
@@ -188,8 +182,7 @@ bool Hsl_IsValid(double h, double s, double l);
  * Returns:
  *  true if the values are correct
  *  false if the values are incorrect
- */
-bool Hsv_IsValid(double h, double s, double v);
+ */bool Hsv_IsValid(double h, double s, double v);
 /*
  * Description:
  *  Checks if the YIQ components are valid
@@ -199,8 +192,7 @@ bool Hsv_IsValid(double h, double s, double v);
  * Returns:
  *  true if the values are correct
  *  false if the values are incorrect
- */
-bool Yiq_IsValid(double y, double i, double q);
+ */bool Yiq_IsValid(double y, double i, double q);
 /*
  * Description:
  *  Checks if the YUV components are valid
@@ -210,8 +202,7 @@ bool Yiq_IsValid(double y, double i, double q);
  * Returns:
  *  true if the values are correct
  *  false if the values are incorrect
- */
-bool Yuv_IsValid(double y, double u, double v);
+ */bool Yuv_IsValid(double y, double u, double v);
 
 /*
  * Description:
