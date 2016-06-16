@@ -4,7 +4,7 @@
  *  Created on: Aug 12, 2012
  *      Author: bogdan
  */
-#include"examples.h"
+#include "examples.h"
 
 void HsiRgbExample(void)
 {
@@ -143,5 +143,5 @@ void YuvRgbExample(void)
     yuv = Yuv_CreateFromRgbF(rgbF->R, rgbF->G, rgbF->B);
     printf("\nYIQ : %f %f %f", yuv->Y, yuv->U, yuv->V);
     printf("\nRGBf : %f %f %f", rgbF->R, rgbF->G, rgbF->B);
-    printf("\nRGBi : %d %d %d", rgbI->R, rgbI->G, rgbI->B);
+    printf("\nRGBi : %d %d %d\n", rgbI->R, rgbI->G, rgbI->B);
 }
