@@ -8,8 +8,8 @@
 #ifndef EXAMPLES_H_
 #define EXAMPLES_H_
 
-#include"colorspace.h"
-#include<stdio.h>
+#include "colorspace.h"
+#include <stdio.h>
 
 void HsiRgbExample(void);
 void HslRgbExample(void);

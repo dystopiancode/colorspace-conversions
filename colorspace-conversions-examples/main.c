@@ -5,10 +5,14 @@
  *      Author: bogdan
  */
 
-#include"examples.h"
+#include "examples.h"
 
 int main(int argc, char** argv)
 {
-
+	HsiRgbExample();
+	HslRgbExample();
+	HsvRgbExample();
+	YiqRgbExample();
+	YuvRgbExample();
     return 0;
 }
