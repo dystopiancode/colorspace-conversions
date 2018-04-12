@@ -62,17 +62,15 @@ RgbFColor* RgbF_CreateFromHsl(double h, double s, double l)
         {
             color = RgbF_Create(x + m, c + m, m);
         }
-        else if (h < (HUE_UPPER_LIMIT / 3.0) && h < (HUE_UPPER_LIMIT / 2.0))
+        else if (h >= (HUE_UPPER_LIMIT / 3.0) && h < (HUE_UPPER_LIMIT / 2.0))
         {
             color = RgbF_Create(m, c + m, x + m);
         }
-        else if (h >= (HUE_UPPER_LIMIT / 2.0)
-                && h < (2.0f * HUE_UPPER_LIMIT / 3.0))
+        else if (h >= (HUE_UPPER_LIMIT / 2.0) && h < (2.0f * HUE_UPPER_LIMIT / 3.0))
         {
             color = RgbF_Create(m, x + m, c + m);
         }
-        else if (h >= (2.0 * HUE_UPPER_LIMIT / 3.0)
-                && h < (5.0 * HUE_UPPER_LIMIT / 6.0))
+        else if (h >= (2.0 * HUE_UPPER_LIMIT / 3.0) && h < (5.0 * HUE_UPPER_LIMIT / 6.0))
         {
             color = RgbF_Create(x + m, m, c + m);
         }
